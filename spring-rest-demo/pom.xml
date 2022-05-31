@@ -38,7 +38,7 @@
 				 
 	</dependencies>
 
-	<!-- Support for Maven WAR Plugin -->
+	<!-- Support for Maven WAR Plugin as replacement for missing web.xml -->
 
 	<build>
 		<finalName>spring-rest-demo</finalName>
