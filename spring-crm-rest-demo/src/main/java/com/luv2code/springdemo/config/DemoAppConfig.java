@@ -26,9 +26,9 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
 @EnableWebMvc
-@EnableTransactionManagement
+@EnableTransactionManagement //bc we do some Hibernate Transactions in the background
 @ComponentScan("com.luv2code.springdemo")
-@PropertySource({ "classpath:persistence-mysql.properties" })
+@PropertySource({ "classpath:persistence-mysql.properties" })//which properties we are going to load in the background for actual db connection
 public class DemoAppConfig implements WebMvcConfigurer {
 
 	@Autowired
